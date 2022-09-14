@@ -31,7 +31,7 @@ class EmployeeStorage(models.Model):
         compute='_compute_storage_capacity')
 
     employee_id = fields.Many2one(
-        comodel_name='employee_storage.employee_storage',
+        comodel_name='employee_storage.employee',
         string='Employee ID',
         required=False)
 
