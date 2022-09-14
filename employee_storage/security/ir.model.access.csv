@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_employee_storage_employee,access.employee_storage.employee,model_employee_storage_employee,,1,1,1,1
+access_employee_storage_employee_data,access.employee_storage.employee_data,model_employee_storage_employee_data,,1,1,1,1
+access_employee_storage_employee_storage,access.employee_storage.employee_storage,model_employee_storage_employee_storage,,1,1,1,1
