@@ -20,7 +20,7 @@ class EmployeeData(models.Model):
 
     storage_id = fields.Many2one(
         comodel_name='employee_storage.employee_storage',
-        string='Storage ID',
+        string='Storage',
         required=True)
 
     data_size = fields.Float(
