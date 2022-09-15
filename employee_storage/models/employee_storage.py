@@ -32,13 +32,13 @@ class EmployeeStorage(models.Model):
 
     employee_id = fields.Many2one(
         comodel_name='employee_storage.employee',
-        string='Employee ID',
+        string='Employee',
         required=False)
 
     data_ids = fields.One2many(
         comodel_name='employee_storage.employee_data',
         inverse_name='storage_id',
-        string='Data IDs',
+        string='Datas',
         required=False)
 
 

@@ -10,7 +10,7 @@
         </record>
 
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="employee_storage_employee_storage_menu_action_categ" name="Employee Storage" parent="employee_storage_menu_root" action="employee_storage_employee_storage_view_action" sequence="12"/>
+        <menuitem id="employee_storage_employee_storage_menu_action_categ" name="Employee Storage" parent="employee_storage_menu_root" action="employee_storage_employee_storage_view_action" sequence="11"/>
 
 
         <record id="employee_storage_employee_storage_view_form" model="ir.ui.view">
@@ -24,7 +24,13 @@
                             <field name="storage_type"/>
                             <field name="storage_size"/>
                             <field name="storage_capacity"/>
+
+                        </group>
+                        <group name="employeeid" string="Employee ID">
                             <field name="employee_id"/>
+
+                        </group>
+                        <group name="dataids" string="Data IDs">
                             <field name="data_ids"/>
 
                         </group>

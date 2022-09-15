@@ -10,7 +10,7 @@
         </record>
 
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="employee_storage_employee_data_menu_action_categ" name="Employee Data" parent="employee_storage_menu_root" action="employee_storage_employee_data_view_action" sequence="11"/>
+        <menuitem id="employee_storage_employee_data_menu_action_categ" name="Employee Data" parent="employee_storage_menu_root" action="employee_storage_employee_data_view_action" sequence="12"/>
 
 
         <record id="employee_storage_employee_data_view_tree" model="ir.ui.view">
@@ -20,8 +20,8 @@
                 <tree string="employee_storage_employee_data_tree">
                     <field name="data_id"/>
                     <field name="data_date"/>
-                    <field name="storage_id"/>
                     <field name="data_size"/>
+                    <field name="storage_id"/>
 
                 </tree>
             </field>
@@ -36,9 +36,11 @@
                         <group name="data" string="Data">
                             <field name="data_id"/>
                             <field name="data_date"/>
-                            <field name="storage_id"/>
                             <field name="data_size"/>
 
+                        </group>
+                        <group name="storage" string="Storage">
+                            <field name="storage_id"/>
                         </group>
                     </sheet>
                 </form>

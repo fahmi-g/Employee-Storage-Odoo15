@@ -25,7 +25,7 @@ class Employee(models.Model):
     storage_ids = fields.One2many(
         comodel_name='employee_storage.employee_storage',
         inverse_name='employee_id',
-        string='Storage IDs',
+        string='Storages',
         required=False)
 
 
